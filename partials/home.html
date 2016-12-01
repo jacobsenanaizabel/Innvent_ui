@@ -10,7 +10,7 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h2>Economia: Bolsas e Ações, Índices, Mercado</h2>
+                <h2>Economia: Bolsas e Ações, Índices e Mercado</h2>
                 <p>Indicadores e notícias sobre a economia no Brasil e no mundo. Dados para posicionamento de empresários e dicas para gerir suas finanças pessoais.</p>
                 <hr>
             </div>
@@ -20,49 +20,39 @@
 <div class="section-colored">
 
     <div class="container">
-
+        <div class="row">    
+        <div class="col-lg-6 col-md-6 col-sm-6">
+        <button type="button" class="btn btn-primary btn-md"  ng-repeat="currencie in currenciesArray" ng-click="changeInput(currencie)" style="1%">{{currencie}}</button>
+        </div>
+        </div>
         <div class="row">
+            
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <h2>Modern Business Features Include:</h2>
-                <ul>
-                    <li>Bootstrap 3 Framework</li>
-                    <li>Mobile Responsive Design</li>
-                    <li>Predefined File Paths</li>
-                    <li>Working PHP Contact Page</li>
-                    <li>Minimal Custom CSS Styles</li>
-                    <li>Unstyled: Add Your Own Style and Content!</li>
-                    <li>Font-Awesome fonts come pre-installed!</li>
-                    <li>100% <strong>Free</strong> to Use</li>
-                    <li>Open Source: Use for any project, private or commercial!</li>
-                </ul>
+                <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <img class="img-responsive" src="http://placehold.it/700x450/ffffff/cccccc">
+                <h2>Selecione uma Cotação de moeda </h2>               
+                <p>                 
+                <label ng-model="currenciesChoose.tes">Moeda escolhida : {{currenciesChoose.tes}}</label>
+                  
+                </p>              
             </div>
         </div>
     </div>
 </div>
 <div class="section">
-
-    <div class="container">
-
+    <div class="container">        
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <img class="img-responsive" src="http://placehold.it/700x450">
+                <h2>Cotação de hoje do dolar para :</h2>
+                <ul>
+                    <li>Cotação do Dolar para o Euro</li>
+                    <li>Cotação do Dolar para o Real</li>
+                    <li>Cotação do Dolar para o Peso Argentino</li>
+                </ul>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
-                <h2>Modern Business Features Include:</h2>
-                <ul>
-                    <li>Bootstrap 3 Framework</li>
-                    <li>Mobile Responsive Design</li>
-                    <li>Predefined File Paths</li>
-                    <li>Working PHP Contact Page</li>
-                    <li>Minimal Custom CSS Styles</li>
-                    <li>Unstyled: Add Your Own Style and Content!</li>
-                    <li>Font-Awesome fonts come pre-installed!</li>
-                    <li>100% <strong>Free</strong> to Use</li>
-                    <li>Open Source: Use for any project, private or commercial!</li>
-                </ul>
+                <div id="containerDay" style="min-width: 310px; height: 400px; margin: 0 auto"></div>              
             </div>
         </div>
     </div>
